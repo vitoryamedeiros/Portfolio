@@ -47,7 +47,7 @@ function toggleSkills(){
 
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
+}).portfolio__container
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper('.portfolio__container', {
