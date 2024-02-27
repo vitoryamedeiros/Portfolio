@@ -9,6 +9,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/header.css">
         <link rel="stylesheet" href="assets/css/buttons.css">
         <link rel="stylesheet" href="assets/css/home.css">
         <link rel="stylesheet" href="assets/css/about.css">
@@ -20,7 +21,7 @@
         <link rel="stylesheet" href="assets/css/changetheme.css">
         <link rel="stylesheet" href="assets/css/medias.css">
 
-        <title>Vitorya Medeiros Portfolio Website</title>
+        <title>Vitorya Medeiros - Portfolio</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -29,41 +30,30 @@
             <nav class="nav container">
                 <a href="#" class="nav__logo"> Vitórya Medeiros</a>
 
-                <!-- <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
-                            </a>
-                        </li>
+                <!-- NAV UL LI-->
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list grid">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link">
+                                    Home
+                                </a>
+                                
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
-                            </a>
-                        </li>
+                            <li class="nav__item">
+                                <a href="#portfolio" class="nav__link">
+                                Projects
+                                </a>
+                            </li>
 
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contactme
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times nav__close" id="nav-close"></i>
-                </div> -->
-
+                            <li class="nav__item">
+                                <a href="#contact" class="nav__link">
+                                    Talk to me
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
                 <div class="nav__btns">
                         <!-- Theme change button -->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -72,7 +62,7 @@
                         <i class="uil uil-apps"></i>
                     </div> -->
                 </div>
-                </nav> 
+            </nav> 
             
         </header>
 
@@ -101,7 +91,7 @@
                                 </g>
                             </svg>      
                             <div class="home__data">
-                                <h1 class="home__title"> Hi, I'am Vitórya</h1>
+                                <h1 class="home__title"> Hello World! <br> I'am Vitórya</h1>
                                 <h3 class="home__subtitle"> Front End Developer</h3>
                                 <p class="home__description">Experience with code and web design</p>
                                 
@@ -112,10 +102,6 @@
 
                                     <a href="https://github.com/vitoryamedeiros" target="_blank" class="home__social-icon">
                                         <i class="uil uil-github-alt"></i>
-                                    </a>
-                                    
-                                    <a href="https://www.instagram.com/vitorya_m2/" target="_blank" class="home__social-icon">
-                                        <i class="uil uil-instagram"></i>
                                     </a>
 
                                     <a href="https://wa.me/5581984688022" target="_blank" class="home__social-icon">
@@ -236,7 +222,7 @@
                             </div>
                         </div>
 
-                        <!--==================== SKILLS 2 - BACKEND ====================
+                        <!--==================== SKILLS 2 - BACKEND ====================-->
                             <div class="skills__content skills__close">
                                 <div class="skills__header">
                                     <i class="uil uil-server-network skills__icon"></i>
@@ -269,9 +255,20 @@
                                             <span class="skills__percentage skills__node"></span>
                                         </div>
                                     </div>
+
+                                    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">JAVA</h3>
+                                            <span class="skills__number">20%</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__java"></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        -->
+                        
 
                         <!--==================== SKILLS 3 - OTHERS ====================-->
                         <div class="skills__content skills__close">
@@ -412,18 +409,18 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section swiper" id="portfolio">
-                <h2 class="section__title">Portfólio</h2>
+                <h2 class="section__title">Recent Projects</h2>
                 <span class="section__subtitle">Most Recent Work</span>
 
                 <div class="portfolio__container container swiper-container">
 
-                    <div class="swiper-button-prev">
+                    <!-- <div class="swiper-button-prev">
                         <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
+                    </div> -->
 
                     <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content coffee grid swiper-slide">
                             
                             <img src="assets/img/coffeeshop-view.png" alt="" class="portfolio__img">
 
@@ -435,16 +432,16 @@
                                 </p>
                                 
                                 <div class="portfolio__icons">
-                                    <img src="assets/icons/js.png" alt="JS-icon">
-                                    <img src="assets/icons/css.png" alt="CSS-icon">
-                                    <img src="assets/icons/html.png" alt="HTML-icon">
+                                    <img src="/portfolio/assets/icons/CSS branco.png" alt="CSS-icon">
+                                    <img src="/portfolio/assets/icons/js-branco.png" alt="JS-icon">
+                                    <img src="/portfolio/assets/icons/html-branco.png" alt="HTML-icon">
                                 </div>
 
-                                <a href="https://vitoryamedeiros.github.io/projeto_coffeeshop/" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://vitoryamedeiros.github.io/projeto_coffeeshop/" target="_blank" class="button button--flex button--small portfolio__button coffee">
                                     Deploy
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
-                                <a href="https://github.com/vitoryamedeiros/projeto_coffeeshop" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://github.com/vitoryamedeiros/projeto_coffeeshop" target="_blank" class="button button--flex button--small portfolio__button coffee">
                                     Code
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -452,59 +449,38 @@
                         </div> 
                             
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
+                        <div class="portfolio__content derry grid swiper-slide">
                             <img src="assets/img/derry-view.png" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Welcome To Derry</h3>
 
-                                <p class="portfolio__description"> Landing Page responsiva criada para simular a divulgacao do trailer da serie "Welcome to Derry", prodduzida pela HBO MAX.
+                                <p class="portfolio__description"> Landing Page responsiva criada para simular a divulgacao do trailer da serie "Welcome to Derry", produzida pela HBO MAX.
                                 </p>
 
                                 <div class="portfolio__icons">
-                                    <img src="assets/icons/js.png" alt="JS-icon">
-                                    <img src="assets/icons/css.png" alt="CSS-icon">
-                                    <img src="assets/icons/html.png" alt="HTML-icon">
+                                    <img src="/portfolio/assets/icons/CSS branco.png" alt="CSS-icon">
+                                    <img src="/portfolio/assets/icons/js-branco.png" alt="JS-icon">
+                                    <img src="/portfolio/assets/icons/html-branco.png" alt="HTML-icon">
                                 </div>
 
-                                <a href="https://vitoryamedeiros.github.io/projeto_welcomeToDerry/" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://vitoryamedeiros.github.io/projeto_welcomeToDerry/" target="_blank" class="button button--flex button--small portfolio__button derry">
                                     Deploy
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
-                                <a href="https://github.com/vitoryamedeiros/projeto_welcomeToDerry" target="_blank" class="button button--flex button--small portfolio__button">
+                                <a href="https://github.com/vitoryamedeiros/projeto_welcomeToDerry" target="_blank" class="button button--flex button--small portfolio__button derry">
                                     Code
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
                             </div>
                         </div>
-
-                        <!--==================== PORTFOLIO 3 - INVISIBLE ====================
-                            <div class="portfolio__content grid swiper-slide">
-                                <img src="assets/img/Pokemon.jfif" alt="" class="portfolio__img">
-
-                                <div class="portfolio__data">
-                                    <h3 class="portfolio__title">Pokedex</h3>
-
-                                    <p class="portfolio__description"> Pokedex website created from an integration with the API "poke.api"</p>
-                                    
-                                <img src="assets/icons/css.png" alt="CSS-icon">
-                                <img src="assets/icons/js.png" alt="JS-icon">
-                                <img src="assets/icons/html.png" alt="HTML-icon">
-
-                                    <a href="https://github.com/vitoryamedeiros/projeto-pokedex" target="_blank" class="button button--flex button--small portfolio__button">
-                                        Demo
-                                        <i class="uil uil-arrow-right button__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        -->
                     </div>
 
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    <div class="about__buttons portfolio__page__button">
+                        <a href="assets/pages/portfolio.html" class="button button--flex">
+                            Ver Portfolio Completo
+                        </a>
                     </div>
-
-                    <div class="swiper-pagination"></div>
                 </div>   
             </section>
 
@@ -620,10 +596,6 @@
         <a href="#home" class="scrollup" id="scroll-up">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-
-        <!--==================== SWIPER JS ====================
-            <script src="assets/js/swiper-bundle.min.js"></script>
-        -->
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>

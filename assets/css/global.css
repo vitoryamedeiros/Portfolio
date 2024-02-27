@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 225; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 238; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -77,7 +77,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  color: var(--title-color);
+  color: var(--first-color-second);
   font-weight: var(--font-semi-bold);
 }
 
@@ -101,7 +101,7 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--first-color-second);
 }
 
 .section__subtitle {

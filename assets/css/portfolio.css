@@ -8,14 +8,13 @@
 .portfolio__container{
     overflow: initial;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .portfolio__content{
     padding: 0 1.5rem;
-    background-color: #5a7ce1dc;
     width: 40vw;
     border-radius: 15px;
     height: 450px;
@@ -23,6 +22,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio__content.coffee{
+    background-color: #bca29b;
+}
+.portfolio__content.derry{
+    background-color: #120000;
 }
 
 .portfolio__img{
@@ -97,3 +103,70 @@
 .swiper-pagination-bullet{
     outline: none;
 }
+
+.portfolio__page__button{
+    margin-top: 50px;
+}
+
+/* PAGE PORTFOLIO */
+
+.section__title2{
+    margin-top: 80px;
+}
+
+.portfolio__content2{
+    padding: 0 1.5rem;
+    width: 23vw;
+    border-radius: 15px;
+    height: 580px;
+    margin: 30px 20px;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio__img2{
+    width: 350px;
+    height: 230px;
+    /* position: relative;
+    top: -30px; */
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio__icons2{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolio__content2.coffee{
+    /* background-color: #bca29b; */
+    background-color: #ad9088;
+}
+.portfolio__button.coffee{
+    background-color: #927c7b;
+}
+.portfolio__button.coffee:hover{
+    background-color: #705d5b;
+}
+
+.portfolio__content2.derry{
+    background-color: #120000;
+}
+.portfolio__button.derry{
+    background-color: #b70000;
+}
+.portfolio__button.derry:hover{
+    background-color: #760000;
+}
+
+.portfolio__content2.linktree{
+    background-color: #331f7aee;
+}
+.portfolio__button.linktree{
+    background-color: #6061C5;
+}
+
