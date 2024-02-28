@@ -169,4 +169,7 @@
 .portfolio__button.linktree{
     background-color: #6061C5;
 }
+.portfolio__button.linktree:hover{
+    background-color: #5152ba;
+}
 
