@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw; */
-    padding: 0px 200px;
+    padding: 0px 500px;
 }
 
 .skills__header{
@@ -43,71 +43,29 @@
 .skills__list{
     row-gap: 1.5rem;
     padding-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.skills__img{
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0px 10px;
 }
 
 .skills__titles{
     display: flex;
-    justify-content: space-between;
-    margin: .3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: baseline;
+    margin: .3rem; */
 }
 
 .skills__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage{
-    height: 10px;
-    border-radius: .25rem;
-}
-
-.skills__bar{
-    background-color: var(--first-color-lighter);
-}
-
-.skills__percentage{
-    display: block;
-    background-color: var(--first-color);
-}
-
-.skills__html{
-    width: 90%;
-}
-.skills__css{
-    width: 85%;
-}
-.skills__js{
-    width: 65%;
-}
-.skills__node{
-    width: 40%;
-}
-
-.skills__python{
-    width: 40%;
-}
-
-.skills__java{
-    width: 20%;
-}
-
-.skills__git{
-    width: 60%;
-}
-.skills__github{
-    width: 70%;
-}
-.skills__figma{
-    width: 75%;
-}
-
-.skills__notion{
-    width: 85%;
-}
-
-.skills__trello{
-    width: 95%;
 }
 
 .skills__close .skills__list {
@@ -123,4 +81,6 @@
     transform: rotate(-180deg);
 }
 
-  
+.skills__img.dark{
+    display: none;
+}

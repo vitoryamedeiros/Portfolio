@@ -1,18 +1,30 @@
 
 /*========== Variables Dark theme ==========*/
-body.dark-theme{
+body.active{
   /* HSL color mode */
-  --first-color-second: hsl(var(--hue-color), 30%, 8%);
-  --title-color: hsl(var(--hue-color), 8%, 95%);
+
+  /* 
+  --title-color: hsl(var(--hue-color), 8%, 95%); 
+  --first-color-second: hsl(var(--hue-color), 30%, 8%)
+  --input-color: hsl(var(--hue-color), 29%, 16%) 
+  */
+
+  --first-color-second: hsl(0deg 0% 100%);
+  --title-color: white;
   --text-color: hsl(var(--hue-color), 8%, 75%);
-  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --input-color: hsl(238deg 36.63% 20.85%);
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
+  --footer-color: hsl(238deg 36.63% 20.85%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-  /*========== Button Dark/Light ==========*/
+body.active h1, h2{
+  color: white;
+}
+  
+/*========== Button Dark/Light ==========*/
 
 .change-theme{
   font-size: 1.25rem;
@@ -38,4 +50,12 @@ body.dark-theme{
 /* Change background header */
 .scroll-header{
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+}
+
+.section__title.active{
+  color: #ffffff;
+}
+
+.footer__bg__dark.active{
+  color: var(--footer-color);
 }

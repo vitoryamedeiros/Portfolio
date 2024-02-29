@@ -6,7 +6,6 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /* Change favorite color */
   --hue-color: 238; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
@@ -17,9 +16,10 @@
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --input-color: hsl(237, 65%, 93%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
+  --footer-color: hsl(238deg 36.63% 20.85%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -69,7 +69,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -92,6 +92,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+hr{
+  margin: 20px;
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/

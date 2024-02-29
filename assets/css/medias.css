@@ -1,48 +1,8 @@
 /*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-@media screen and (max-width: 350px) {
-
-    .container{
-      margin-left: var(--mb-1);
-      margin-right: var(--mb-1);
-    }
-
-    /* .nav__menu{
-      padding: 2rem .25rem 4rem;
-    }
-
-    .nav__list{
-      column-gap: 0;
-    } */
-  
-    .home__content{
-        grid-template-columns: .25fr 3fr;
-        padding-top: 2.5rem;
-    }
-  
-    .home__blob{
-      width: 200px;
-    }
-  
-    .skills__title{
-      font-size: var(--normal-font-size);
-    }
-  
-}
 
 
-/* Font size for large devices */
-@media screen and (min-width: 968px) {
-  :root {
-      --big-font-size: 3.25rem;
-      --h1-font-size: 2.5rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: .875rem;
-      --smaller-font-size: .813rem;
-  }
-}
+
+
 
 @media screen and (max-width: 1400px) {
 
@@ -59,8 +19,20 @@
     height: 290px;
   }
 
+  .portfolio__img2.large{
+    display: none;
+  }
+
   .portfolio__button{
     padding: 10px;
+  }
+
+  .portfolio__img2.medium{
+    display: flex;
+  }
+
+  .swiper-wrapper2 {
+    grid-template-columns: repeat(3, 500px);
   }
 }
 
@@ -86,23 +58,21 @@
     overflow: initial;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
     width: 450px;
     margin-bottom: 50px;
+    padding: 10px;
   }
 
   .portfolio__img{
-    width: 270px;
-    height: 310px;
+    width: 250px;
+    height: 280px;
     border-radius: .5rem;
     justify-self: center;
     padding-right: 15px;
-} 
-
-  .swiper-wrapper{
-    display: flex;
-    flex-direction: column;
-  }
+  } 
 
   .portfolio__title{
     padding-top: 10px;
@@ -116,4 +86,70 @@
     font-size: 1rem;
     padding: 10px;
   }
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+      --big-font-size: 3.25rem;
+      --h1-font-size: 2.5rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+  }
+
+  /* .portfolio__img2.medium{
+    display: flex;
+  } */
+
+}
+
+@media screen and (max-width: 968px) {
+  .swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portfolio__page__button{
+    margin-top: 0px;
+  }
+
+  .portfolio__icons{
+    justify-content: center;
+  }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+
+.container{
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
+
+/* .nav__menu{
+  padding: 2rem .25rem 4rem;
+}
+
+.nav__list{
+  column-gap: 0;
+} */
+
+.home__content{
+  grid-template-columns: .25fr 3fr;
+  padding-top: 2.5rem;
+}
+
+.home__blob{
+  width: 200px;
+}
+
+.skills__title{
+  font-size: var(--normal-font-size);
+}
+
 }

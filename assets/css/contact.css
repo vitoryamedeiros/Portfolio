@@ -41,10 +41,10 @@ form{
 
 .contact__content{
     background-color: var(--input-color);
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: .75rem 1rem .25rem;
     margin-bottom: 5px;
-    border: 2px solid white;
+    border: 2px solid rgb(187, 174, 251);
     width: 50vw;
 }
 
