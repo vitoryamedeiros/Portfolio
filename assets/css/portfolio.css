@@ -25,7 +25,7 @@
 }
 
 .portfolio__content.coffee{
-    background-color: #bca29b;
+    background-color: #ad9088;
 }
 .portfolio__content.derry{
     background-color: #120000;
@@ -129,10 +129,12 @@
     background-color: #ad9088;
 }
 .portfolio__button.coffee{
-    background-color: #927c7b;
+    background-color: #d3a899;
 }
 .portfolio__button.coffee:hover{
-    background-color: #705d5b;
+    background-color: #a37f70;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.51);
+
 }
 
 /* ======== DERRY ======== */
@@ -141,9 +143,11 @@
 }
 .portfolio__button.derry{
     background-color: #b70000;
+
 }
 .portfolio__button.derry:hover{
     background-color: #760000;
+    border-bottom: 3px solid rgba(47, 47, 47, 0.798);
 }
 
 /* ======== LINKTREE ======== */
@@ -152,9 +156,11 @@
 }
 .portfolio__button.linktree{
     background-color: #6061C5;
+
 }
 .portfolio__button.linktree:hover{
     background-color: #5152ba;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.798);
 }
 
 /* ======== GAME STORE ======== */
@@ -162,10 +168,11 @@
     background-color: #161C4D;
 }
 .portfolio__button.gamestore{
-    background-color: #1bc6e0;
+    background-color: #0eb2cb;
 }
 .portfolio__button.gamestore:hover{
-    background-color: #09acc5;
+    background-color: #06869a;
+    border-bottom: 3px solid rgba(142, 142, 142, 0.798);
 }
 
 /* ======== BARBER SHOP ======== */
@@ -174,7 +181,9 @@
 }
 .portfolio__button.barbershop{
     background-color: #8F7557;
+
 }
 .portfolio__button.barbershop:hover{
-    background-color: #7e664b;
+    background-color: #6c573f;
+    border-bottom: 3px solid rgba(121, 121, 121, 0.798);
 }

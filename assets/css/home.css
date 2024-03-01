@@ -56,9 +56,29 @@
     margin-bottom: var(--mb-0-75);
   }
   
-  /* .home__description {
-    margin-bottom: var(--mb-2);
+
+  /* ========= TYPING ANIMATION =========
+  .message{
+    border-right: 4px solid;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(10) step-end;
+    animation: blinking 0.5 infinite step-end;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blinking {
+    50% {
+      border-color: transparent;
+    }
   } */
+
   
   .home__scroll{
     display: none;

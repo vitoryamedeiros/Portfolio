@@ -1,12 +1,13 @@
 
 .footer{
     padding-top: 2rem;
-    width: 100VW;
+    width: 100vw;
 }
   
 .footer__container{
     row-gap: 3.5rem;
     padding: 30px;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     text-align: center;

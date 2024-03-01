@@ -19,7 +19,7 @@
   --input-color: hsl(237, 65%, 93%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
-  --footer-color: hsl(238deg 36.63% 20.85%);
+  --footer-color: hsl(var(--hue-color), 69%, 61%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -111,7 +111,7 @@ hr{
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2);
 }
 
 .section__title, 
