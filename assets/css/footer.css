@@ -7,7 +7,7 @@
 .footer__container{
     row-gap: 3.5rem;
     padding: 30px;
-    width: 100vw;
+    /* width: 100vw; */
     justify-content: center;
     align-items: center;
     text-align: center;
