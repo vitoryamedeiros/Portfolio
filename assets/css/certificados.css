@@ -1,0 +1,22 @@
+
+.certf-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.card-body{
+    padding: 10px;
+}
+.card-text{
+    font-size: 1rem;
+    font-weight: bold;
+}
