@@ -1,17 +1,29 @@
 
 /*==================== BUTTONS ====================*/
 .button{
-    display: inline-block;
-    background-color: var(--first-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: 5rem;
-    font-weight: var(--font-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--first-color);
+    font-size: 18px;
+    border-radius: 0px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid var(--first-color-alt);
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px var(--first-color);
+    background-color: #ffffff;
   }
   
   .button:hover {
-    background-color: var(--first-color-alt);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.66);
+    box-shadow: 0 0 #fff;
+    color: #fff;
+    background-color: var(--first-color);
+    /* background-color: var(--first-color-alt);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.66); */
   }
   
   .button__icon {
@@ -26,3 +38,129 @@
     margin-top: 15px;
   }
   
+
+  .portolio__buttons{
+    width: 200px;
+    height: 40px;
+  }
+/* ARROW-UP  */
+* {
+    box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+.arrow-up {
+    background-color: #e3006ed5;
+    height: 40px;
+    width: 40px;
+    display: block;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    position: relative;
+    left: 95%;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+    overflow: hidden;
+  }
+  
+  .arrow-slide {
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    z-index: 0;
+  }
+  
+  .left-arm {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: 19px;
+    left: 3px;
+    width: 20px;
+    display: block;
+    transform: rotate(-45deg);
+    &:after {
+      content: "";
+      background-color: #ffffff;
+      width: 20px;
+      height: 1px;
+      display: block;
+      border-radius: 1px;
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+      transform-origin: right center;
+      z-index: -1;
+    }
+  }
+  
+  .right-arm {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: 19px;
+    left: 17px;
+    width: 20px;
+    display: block;
+    transform: rotate(45deg);
+    border-radius: 2px;
+    &:after {
+      content: "";
+      background-color: #ffffff;
+      width: 20px;
+      height: 1px;
+      display: block;
+      border-radius: 1px;
+      transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);
+      transform-origin: left center;
+      z-index: -1;
+    }
+  }
+  
+  .arrow-up:hover {
+    transition: all .1s;
+    .left-arm:after {
+      transform: rotate(-10deg);
+    }
+    .right-arm:after {
+      transform: rotate(10deg);
+    }
+    .arrow-slide {
+      transition: all .4s ease-in-out;
+      transform: translateY(200%);
+    }
+  }
+
+  .arrow-up {
+    display: block;
+    left: 96%;
+}
+
+.back-to-top {
+    background: var(--first-color);
+    cursor: pointer;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+    z-index: 2;
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}

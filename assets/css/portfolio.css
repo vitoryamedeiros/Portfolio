@@ -23,6 +23,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    -webkit-box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.75);
 }
 
 .portfolio__content.recifidades{
@@ -54,8 +58,13 @@
     border-radius: .5rem;
     justify-self: center;
     padding-right: 15px;
+    opacity: 0.8;
+    transition: 0.3s;
+    z-index: 1;
 }
-
+.portfolio__img:hover{
+    opacity: 1;
+}
 
 .portfolio__title{
     font-size: var(--h3-font-size);
@@ -71,7 +80,9 @@
 .portfolio__icons{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding:  10px 0px;
 
 }
@@ -139,15 +150,20 @@
     align-items: center;
 }
 
+.portfolio__button{
+    padding: 15px;
+    border: 2px solid #ffffff40;
+}
 
-
-/* ======== COFFEE ======== */
+/* ======== recifidades ======== */
 .portfolio__content2.recifidades{
     /* background-color: #bca29b; */
     background-color: #0363AD;
 }
 .portfolio__button.recifidades{
     background-color: #EA7209;
+    padding: 15px;
+    border: 2px solid #ffffff40;
 }
 .portfolio__button.recifidades:hover{
     background-color: #a25009;

@@ -23,7 +23,6 @@
 
 .skills__icon {
     margin-right: var(--mb-0-75);
-
 }
 
 .skills__title{
@@ -52,6 +51,10 @@
     max-width: 60px;
     max-height: 60px;
     margin: 0px 10px;
+    transition: transform 0.5s;
+}
+.skills__img:hover{
+    transform: scale(1.2);
 }
 
 .skills__titles{

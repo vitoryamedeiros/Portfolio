@@ -104,7 +104,8 @@
                             </svg>      
                             <div class="home__data">
                                 <!-- HOME HEADER -->
-                                <h1 class="home__title message"> Hello World! <br> I'am Vitórya</h1>
+                                <h1 class="home__title message titulo-principal"> Hello World!👾🖖🏻</h1>
+                                <h1 class="home__title">I'm Vitorya</h1>
                                 <h3 class="home__subtitle"> Front-End Developer</h3>
                                 <p class="home__description">Experience with code and web design</p>
                                 
@@ -168,24 +169,25 @@
 
                         <!-- NUMBERS INFOS -->
                         <div class="about__info">
-                            <div>
+                            <div class="about__info-data years">
                                 <span class="about__info-title">02+</span>
                                 <span class="about__info-name">Anos de <br> experiência</span>
                             </div>
+                            
+                            <!-- CV BUTTON DOWLOAD -->
+                            <div class="about__buttons">
+                                <a download="" href="assets/pdf/CV-Vitorya Medeiros.pdf" class="button button--flex">
+                                    Download CV<i class="uil uil-download-alt button__icon"></i>
+                                </a>
+                            </div>
 
-                            <div>
+                            <div class="about__info-data projects">
                                 <span class="about__info-title">10+</span>
                                 <span class="about__info-name">Projetos <br> Finalizados </span>
                             </div>
 
                         </div>
 
-                        <!-- CV BUTTON DOWLOAD -->
-                        <div class="about__buttons">
-                            <a download="" href="assets/pdf/CV-Vitorya Medeiros.pdf" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -508,11 +510,11 @@
                                 </div>
 
                                 <div class="portolio__buttons">
-                                    <a href="https://vitoryamedeiros.github.io/projeto_recifidades/" target="_blank" class="button button--flex button--small portfolio__button recifidades">
+                                    <a href="https://vitoryamedeiros.github.io/rojeto_recifidades/" target="_blank" class=" button--flex button--small portfolio__button recifidades">
                                         View
                                         <i class="uil uil-arrow-right button__icon"></i>
                                     </a>
-                                    <a href="https://github.com/vitoryamedeiros/projeto_recifidades" target="_blank" class="button button--flex button--small portfolio__button recifidades">
+                                    <a href="https://github.com/vitoryamedeiros/rojeto_recifidades" target="_blank" class=" button--flex button--small portfolio__button recifidades">
                                         Code
                                         <i class="uil uil-arrow-right button__icon"></i>
                                     </a>
@@ -541,11 +543,11 @@
 
                                 <!-- buttons -->
                                 <div class="portolio__buttons">
-                                    <a href="https://vitoryamedeiros.github.io/projeto_welcomeToDerry/" target="_blank" class="button button--flex button--small portfolio__button derry">
+                                    <a href="https://vitoryamedeiros.github.io/projeto_welcomeToDerry/" target="_blank" class="button--flex button--small portfolio__button derry">
                                         View
                                         <i class="uil uil-arrow-right button__icon"></i>
                                     </a>
-                                    <a href="https://github.com/vitoryamedeiros/projeto_welcomeToDerry" target="_blank" class="button button--flex button--small portfolio__button derry">
+                                    <a href="https://github.com/vitoryamedeiros/projeto_welcomeToDerry" target="_blank" class="button--flex button--small portfolio__button derry">
                                         Code
                                         <i class="uil uil-arrow-right button__icon"></i>
                                     </a>
@@ -739,13 +741,17 @@
          </div>
         </footer>
         
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#home" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
+        <!--==================== ARROW TOP BUTTON -->
+        <a href="#home" class="arrow-up back-to-top" onclick="scrollToTop()">
+            <span class="left-arm"></span>
+            <span class="right-arm"></span>
+            <span class="arrow-slide"></span>
         </a>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/JS/main.js"></script>
         <script src="assets/JS/changeTheme.js"></script>
+        <script src="assets/JS/button-top.js"></script>
+        <script src="assets/JS/typing-effect.js"></script>
     </body>
 </html>

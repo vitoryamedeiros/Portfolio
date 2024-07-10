@@ -26,9 +26,11 @@
     font-size: 1.5rem;
     margin: 5px;
     color: var(--first-color);
+    transition: transform 0.5s;
   }
   .home__social-icon:hover {
     color: var(--first-color-alt);
+    transform: scale(1.2);
   }
   
   .home__blob {
@@ -57,27 +59,37 @@
   }
   
 
-  /* ========= TYPING ANIMATION =========
-  .message{
-    border-right: 4px solid;
-    width: 10ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 2s steps(10) step-end;
-    animation: blinking 0.5 infinite step-end;
+  /* ========= TYPING ANIMATION =========*/
+
+  .titulo-principal{
+    color: #00b50677;
+    max-width: 350px;
+    text-align: start;
+    margin: 15px 0;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .titulo-principal:after{
+  content: '|';
+  margin-left: 1px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+  }
+  /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+  @keyframes pisca{
+      0%, 100%{
+          opacity: 1;
+      }
+      50%{
+          opacity: 0;
+      }
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-  }
-
-  @keyframes blinking {
-    50% {
-      border-color: transparent;
-    }
-  } */
+    @keyframes blinking {
+      50% {
+        border-color: transparent;
+      }
+    } 
 
   
   .home__scroll{
