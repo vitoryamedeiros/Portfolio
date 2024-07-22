@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="assets/css/about.css">
         <link rel="stylesheet" href="assets/css/skills.css">
         <link rel="stylesheet" href="assets/css/portfolio.css">
+        <link rel="stylesheet" href="assets/css/carrossel.css">
         <link rel="stylesheet" href="assets/css/certificados.css">
         <link rel="stylesheet" href="assets/css/contact.css">
         <link rel="stylesheet" href="assets/css/footer.css">
@@ -499,7 +500,7 @@
                                 <!-- <p class="portfolio__description"> 
                                     Landing Page responsiva criada para simular o site de uma Cafeteria com tematica Vintage.
                                 </p> -->
-                                
+                                <p class="p-projectStacks">Tecnologias Utilizadas</p>
                                 <div class="portfolio__icons">
                                     <img src="assets/icons/whiteIcons/CSS branco.png" alt="CSS-icon">
                                     <img src="assets/icons/whiteIcons/html-branco.png" alt="HTML-icon">
@@ -533,7 +534,7 @@
 
                                 <!-- <p class="portfolio__description"> Landing Page responsiva criada para simular a divulgacao do trailer da serie "Welcome to Derry".
                                 </p> -->
-
+                                <p class="p-projectStacks">Tecnologias Utilizadas</p>
                                 <!-- stack icons -->
                                 <div class="portfolio__icons">
                                     <img src="assets/icons/whiteIcons/CSS branco.png" alt="CSS-icon">
@@ -573,40 +574,64 @@
                 <h2 class="section__title section__title__portfolio ">Licenças e Certificados</h2>
                 <span class="section__subtitle">O que tenho estudado</span>
 
-                <!-- cards -->
-                <div class="certf-cards">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="assets/certificados/FAST-webAPI.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Web API</p>
-                            <span>Microcertificado</span>
-                        </div>
-                    </div>
+                <div class="certificados-container">
+                    <!-- cards -->
+                    <div class="certf-cards cCarousel">
+                                <!-- geral FAST -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/fast.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <p class="card-text">[FAST - Aceleração] Bootcamp Frontend </p>
+                                    <span>72 horas</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- webapi FAST -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/FAST-webAPI.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <p class="card-text">Web API</p>
+                                        <span>Microcertificado</span>
+                                    </div>
+                                </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="assets/certificados/htmldeveloper.png" alt="Card image cap">
-                        <div class="card-body">
-                        <p class="card-text">Formação HTML Web Developer</p>
-                        <span>21 horas</span>
-                        </div>
-                    </div>
+                                <!-- REACT FAST -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/react.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <p class="card-text">REACT e Testes Automatizados</p>
+                                    <span>Microcertificado</span>
+                                    </div>
+                                </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="assets/certificados/javascriptdeveloper.png" alt="Card image cap">
-                        <div class="card-body">
-                        <p class="card-text">Formação Javascript Developer</p>
-                        <span>39 horas</span>
-                        </div>
-                    </div>
+                                <!-- Formação HTML DIO -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/htmldeveloper.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <p class="card-text">Formação HTML Web Developer</p>
+                                    <span>21 horas</span>
+                                    </div>
+                                </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="assets/certificados/ux-FIAP.png" alt="Card image cap">
-                        <div class="card-body">
-                        <p class="card-text">User Experience</p>
-                        <span>60 horas</span>
-                        </div>
+                                <!-- Formação Javascript DIO -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/javascriptdeveloper.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <p class="card-text">Formação Javascript Developer</p>
+                                    <span>39 horas</span>
+                                    </div>
+                                </div>
+
+                                <!-- User Experience FIAP -->
+                                <div class="card cCarousel-item" style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/certificados/ux-FIAP.png" alt="Card image cap">
+                                    <div class="card-body">
+                                    <p class="card-text">User Experience</p>
+                                    <span>60 horas</span>
+                                    </div>
+                                </div>
                     </div>
-                </div>
+                </div>  
             </section>
 
             <!--==================== CONTACT ME ====================-->
@@ -753,5 +778,6 @@
         <script src="assets/JS/changeTheme.js"></script>
         <script src="assets/JS/button-top.js"></script>
         <script src="assets/JS/typing-effect.js"></script>
+        <script src="assets/JS/carroussel.js"></script>
     </body>
 </html>

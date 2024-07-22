@@ -42,6 +42,10 @@
     justify-content: center;
     flex-direction: column;
 }
+.p-projectStacks{
+    color: rgba(187, 187, 187, 0.855);
+    font-size: .8rem;
+}
 
 .portolio__buttons {
     display: flex;
