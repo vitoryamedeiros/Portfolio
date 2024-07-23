@@ -29,7 +29,7 @@
 
 .cCarousel-item {
     min-width: 18rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     transition: transform 0.5s ease;
 }
 
